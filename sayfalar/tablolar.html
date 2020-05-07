@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tablolar</title>
+    <style>
+        /* tabloya kenarlık eklemek için aşağıdaki css kurallarını ekliyoruz.*/
+        table, td,th{
+            border: 1px solid black;
+            border-collapse: collapse; /* bu css kuralı ile tablo kenarlıklarını tek çizgi şeklinde gözğkmesini sağlıyoruz*/
+        }
+
+    </style>
+</head>
+<body>
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+    <!-- w3school tablolar sayfası: https://www.w3schools.com/html/html_tables.asp -->
+    <!-- 
+        &lt; web sayfasına < işareti ekler
+        &gt; web sayfasına > işareti ekler
+        küçüktür ve büyüktür işareti html etiketlerini oluşturmada kullanıldığı için bu işaretleri eklemek istediğimizde yukarıdaki komutlar yazılır. 
+    -->
+    <h1>HTML'de tablo oluşturma</h1>
+    <p>HTML'de tablo oluşturmak için &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;caption&gt;, &lt;colgroup&gt;, &lt;col&gt;, &lt;tbody&gt;, &lt;thead&gt;,&lt;tfoot&gt; etiketleri kullanılır.<br>
+        &lt;table&gt; tablo oluşturmak için kullanılan temel etikettir. <br>
+        &lt;tr&gt; tablo içerisine satır eklemek için kullanılan etikettir. <br>
+        &lt;th&gt; tabloda satır içerisine tek bir başlık hücresi eklemek için kullanılan etikettir. <br>
+        &lt;td&gt; tabloda satır içerisine tek bir hücresi eklemek için kullanılan etikettir. <br>
+        &lt;caption&gt; tabloya başlık eklemek için kullanılan etikettir. <br>
+        &lt;colgroup&gt; ve &lt;col&gt;. sütunları gruplamak ve bu sütunlara style özellikleri tanımlamak için kullanılır.<br>
+        &lt;tbody&gt;, &lt;thead&gt; ve &lt;tfoot&gt; . <br>
+    </p>
+    <table>
+        <caption>Üyelerin İsim Listesi</caption>
+        <colgroup><!-- Sütünları gruplayıp onlara ek özellik vermek için kullanılır.-->
+            <!-- col etiketi ile sütun özellikleri belirtilir. span özniteliği bu özelliğin kaç sütunu kapsayacağı belirtilir. -->
+            <col span="3" style="background-color: red;"><!-- üç sütun arkaplan rengi kırmızı olacak-->
+            <col style="background-color: yellow;"><!--üç sütundan sonraki sütunun arkaplan rengi sarı olacak-->
+        </colgroup>
+        
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Soyisim</th>
+                <th>Üyelik Ödeme</th>
+                <th>Grup</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samet</td>
+                <td>ATABAŞ</td>
+                <td>100</td>
+                <!-- rowspan özniteliği hücrenin kaç satırı kapsayacağını belirtir -->
+                <td rowspan="2">Yöneticiler</td>
+            </tr>
+            <tr>
+                <td>Mahmut</td>
+                <td>ATABAŞ</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Ahmet</td>
+                <td>atabaş</td>
+                <td>75</td>
+                <td rowspan="2">Üye</td>
+            </tr>
+            <tr>
+                <td>Ahmet</td>
+                <td>atabaş</td>
+                <td>75</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan özniteliği hücrenin kaç sütunu kapsayacağını belirtir -->
+                <td colspan="2">Toplam Aidat:</td>
+                <td>185</td>
+                <td>.</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+</body>
+</html>

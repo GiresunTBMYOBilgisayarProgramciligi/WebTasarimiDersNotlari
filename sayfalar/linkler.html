@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Bağlantılar (Linkler)</title>
+</head>
+<body>
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+    <!--w3school Linkler sayfası https://www.w3schools.com/html/html_links.asp -->
+    <p>Linkler neredeyse her web sayfasında bulunan elemanlardır. Linkler sayesinde sayfalara arasında bağlantılar kurularak web sitesi içerisnde ve internette gezinme imkanı oluşturulur.</p>
+    <p>Bağlantılar (Linkler) oluşturmak için &lt;a&gt; etiketi kullanılır. <br>
+        &lt;a&gt; etiketine href özniteliği ile bağlantı oluşturulacak adres tanımlanır. <br>
+        target etiketi ile bağlantının hangi hedefte açılacağı belirtilir. <br>
+        targetÖzniteliği şu değerlerden birine sahip olabilir:
+        <ul>
+            <li>_blank - Bağlantılı belgeyi yeni bir pencerede veya sekmede açar</li>
+            <li>_self - Bağlantılı belgeyi tıklatıldığı pencerede / sekmede açar (bu varsayılan değerdir)</li>
+            <li>_parent - Bağlı belgeyi üst çerçevede açar</li>
+            <li>_top - Bağlantılı belgeyi pencerenin tüm gövdesinde açar</li>
+        </ul>
+        Aşağıdaki örnek bağlantıların kodlarını inceleyin.        
+    </p>
+    <!--Harici bir web sayfasına bağlantı oluşturulurken bu web sayfası tam olarak yazılmalıdır.-->
+    <a href="http://google.com" target="_blank">Google</a><!--target _blank ile bu linkin yeni sayfada açılması sağlanacak-->
+    <br>
+    <!--Aynı site içeisindeki sayfalara ulaşmak için tüm adresi yazmak gerekmez.
+        Bağlantı veren sayfa ile bağlantı verilen sayfa aynı dizin (klasör) içerisinde ise direkt doyanın adı yazılır.
+    -->
+    <a href="sayfa1.html">Birinci Sayfa</a>
+    <br>
+    <!--Bağlantı veren sayfa bağlantı verilen sayfanın üst dizininde(klasöründe) ise dosya isminin önüne bağlantı veilen sayfanın dizinine inilene kadar ../ eklenir. -->
+    <a href="../iletisim.html">İletişim</a>
+    <br>
+    <!--Bağlantı veren sayfa bağlantı verilen sayfanın alt dizininde (klasöründe) ise dosyaya ulaşmak için klasör isimleri de eklenmelidir.-->
+    <a href="ustdizin/sayfa2.html">Sayfa 2</a>
+    <!-- ../ ile alt klasöre inilip oradaki başka bir üst dizine çıkılabilir.-->
+    
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+</body>
+</html>

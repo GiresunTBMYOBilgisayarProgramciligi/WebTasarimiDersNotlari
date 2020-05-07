@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head</title>
+</head>
+<body>
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+    <h1>Head Etiketi</h1>
+    <p>&lt;head&gt; &lt;/head&gt; elemanı tarayıcıya ve siteyi ziyeret eden arama botlarına site hakkında bilgi veren kısımdır.</p>
+    <p>head etiketi içierinde metadata ismi verilen bilgi verici etiketler bulunur. Bunlardan bazıları:
+        &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, and &lt;base&gt; etiketleridir.
+    </p>
+
+    <h3>title</h3>
+    <p>title etiketi tüm html sayfalarında olması gereken bir etikettir. <br>
+    Bu etiket ile sekme başlığı, web sayfası vaforilere eklendiğinde gözükecek başlık ve arama motoru sonuçlarında gözükecek başlığı belirtir.</p>
+    <h3>style</h3>
+    <p>Bu etiket ile sayfa içerisinde kullanılmak üzere yazılan CSS kodları yazılır. </p>
+    <h3>link</h3>
+    <p>link etiketi ile sayfaya eklenecek olan harici css dosyası sayfaya bağlanır. <br>
+    <code>&lt;link rel="stylesheet" href="mystyle.css"&gt;</code> 
+    </p>
+    <h3>meta</h3>
+    <p>Meta etiketi ile sayfa hakkında özel bilgiler eklenir.Örneğin sayfanın hangi karakter kodu ile yazıldığ, sayfanın açıklaması, anahtar kelimeleri, yazar ismi. <br>
+    meta etiketi ile eklenen veriler tarayıcıya içeriğin nasıl gösterileceği hakkında bilgi verir. Arama motorlarına anahtar kelimeler ve açıklama gibi bilgiler verir. </p>
+    <code>&lt;meta charset="UTF-8"&gt; <br>
+        &lt;meta name="description" content="Free Web tutorials"&gt;<br>
+        &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt; <br>
+        &lt;meta name="author" content="John Doe"&gt;
+    </code>
+    <h3>Viewport Ayarı</h3>
+    <p>HTML'de web tasarımcılarının &lt;meta&gt; etiketi aracılığıyla görünüm alanı üzerinde kontrol sahibi olmalarını sağlayan bir yöntem vardır.
+        Görünüm, kullanıcının web sayfasının görünür alandır. Cihaza bağlıdır ve cep telefonundaki bilgisayar ekranından daha küçük olacaktır.
+        Tüm web sayfalarınıza aşağıdaki &lt;meta&gt; görünüm alanı öğesini eklemelisiniz:
+    </p>
+    <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+    <p>
+        Bir &lt;meta&gt; viewport öğesi, tarayıcıya sayfanın boyutlarını ve ölçeklendirmesini nasıl kontrol edeceğiniz konusunda talimatlar verir. <br>
+
+        Width = device-width bölümü, aygıtın ekran genişliğini sayfanın genişliğini olarak ayarlar (aygıta bağlı olarak değişir). <br>
+
+        initial-scale=1.0 bölümü, sayfa tarayıcı tarafından ilk yüklendiğinde başlangıç ​​zoom seviyesini ayarlar. <br>
+
+        Aşağıda, viewport meta etiketi olmayan bir web sayfası örneği ve viewport &lt;meta&gt; etiketi ile aynı web sayfası örneği verilmiştir:
+
+    </p>
+    <table style="width: 500px; margin: 5px auto;border-collapse: collapse;" border="1">
+        <tr>
+            <td style="padding: 5px;"><img src="https://www.w3schools.com/css/img_viewport1.png"></td>
+            <td style="padding: 5px;"><img src="https://www.w3schools.com/css/img_viewport2.png" alt=""></td>
+        </tr>
+        <tr >
+            <td>viewport olmadan</td>
+            <td>vieport ayarı ile</td>
+        </tr>
+    </table>
+    <h3>script</h3>
+    web sayfasına JavaScriptkodları eklemek için kullanılır. 
+    <h3>base</h3>
+    <p>Bir sayfadaki tüm göreli URL'ler için temel URL'yi ve temel hedefi belirtir. Göreli URL ler normalde yazıldıkları sayfanın konumuna göre ayarlanmaktadır.</p>
+    <code>&lt;base href="https://www.w3schools.com/images/" target="_blank"&gt;</code>
+    şeklinde tanımlama yapıldığında href=index.html  bağlantısı https://www.w3schools.com/images/index.html
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+</body>
+</html>

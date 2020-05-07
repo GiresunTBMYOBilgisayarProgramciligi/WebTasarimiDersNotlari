@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeler</title>
+</head>
+<body>
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+    <!--w3school listeler sayfası https://www.w3schools.com/html/html_lists.asp -->
+    <!-- 
+        &lt; web sayfasına < işareti ekler
+        &gt; web sayfasına > işareti ekler
+        küçüktür ve büyüktür işareti html etiketlerini oluşturmada kullanıldığı için bu işaretleri eklemek istediğimizde yukarıdaki komutlar yazılır. 
+    -->
+    <h1>HTML'de liste oluşturma</h1>
+    <p>HTML'de oluşturduğunuz web sayfasına liste eklemek için &lt;ul&gt;, &lt;ol&gt; ve &lt;dl&gt; etiketleri kullanılır.</p>
+    <p>&lt;ul&gt; etikeli sıralanmamış (unordered) liste oluşturmak için kullanılır. <br>
+    Bu listeye eleman eklemek için &lt;li&gt; etiketi kullanılır. 
+    </p>
+    <!--Sıralanmamış listeler-->
+    <ul>
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Muz</li>
+        <li>Kivi</li>
+    </ul>
+    <ul style="list-style: square;"><!-- list-style css özelliği ile sıralanmamış listenin liste sembolünü değiştirebilirsiniz. -->
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Muz</li>
+        <li>Kivi</li>
+    </ul>
+    <!--Sıralı listeler-->
+    <ol>
+        <li>Otomobil</li>
+        <li>Motorsiklet</li>
+        <li>Otobüs</li>
+        <li>Kamyon</li>
+    </ol>
+    <ol type="i"><!-- type özniteliği ile sıralanmış listenin sıralama türünü belirleyebilirsiniz.-->
+        <li>Otomobil</li>
+        <li>Motorsiklet</li>
+        <li>Otobüs</li>
+        <li>Kamyon</li>
+    </ol>
+    <!--Açıklama listeleri-->
+    <dl>
+        <dt>Kahve</dt>
+        <dd>- siyah sıcak içecek</dd>
+        <dt>Süt</dt>
+        <dd>- beyaz soğuk içecek</dd>
+    </dl>
+    <!--İç içe listeler-->
+    <ol type="i">
+        <li>Otomobil</li>
+        <li>Motorsiklet</li>
+        <li>Otobüs
+            <ol type="1" start="50"><!-- start özniteliği ile sıralı listenin başlangıç değerini belirleyebilirsiniz.-->
+                <li>Belediye</li>
+                <li>ÖZel</li>
+                <li>Halk</li>
+            </ol>
+        </li>
+        <li>Kamyon</li>
+    </ol>
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formlar</title>
+    <style>
+        table,td,th{
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+    <!--W3school formlar sayfası https://www.w3schools.com/html/html_forms.asp-->
+    <h1>HTML Formlar</h1>
+    <p>
+        Web sayfalarında kullanıcılardan bilgi almak için formlar kullanılmaktadır. Kullanıcıdan alınan bilgiler, arayüzde anlık değişikliker yapmak için, web sunucusuna gönderilip işlenmek ve depolanmak için kullanılabilir.
+    </p>
+    <p>
+        HTML formu oluşturmak için &lt;form&gt; etiketi kullanılır. Form etiketi temel olarak action, method, name özniteliklerine ihtiyaç duyar. <br>
+
+    </p>
+    <table style="width: 500px;">
+        <caption>Form</caption>
+		<tbody><tr><th style="width:20%">Özellik</th><th style="width:40%">Değer</th><th style="width:40%">Tanımı</th></tr>
+		<tr>
+            <td>accept</td>
+            <td>MIME-tipi</td>
+            <td>Sunucunun kabul ettiği dosya türünü belirtir.<br><span style="color: red; font-size: 9px; margin: 0;">HTML5 desteklenmiyor.</span></td>
+        </tr>
+		<tr>
+            <td>accept-charset</td>
+            <td>karakter-seti</td>
+            <td>Form göndermek için kullanılacak karakter kodlamasını belirtir.</td>
+        </tr>
+		<tr>
+            <td>action</td>
+            <td>URL</td>
+            <td>Form verilerinin nereye gönderileceğini belirtir.</td>
+        </tr>
+		<tr>
+            <td>autocomplete</td>
+            <td>on<br>off</td>
+            <td>Otomatik tamamlamam özelliğinin açık veya kapalı olacağını belirtir.</td>
+        </tr>
+		<tr>
+            <td>enctype</td>
+            <td>application/x-www-form-urlencoded<br>multipart/form-data<br>text/plain</td>
+            <td>Form verileri sunucuya gönderilirken nasıl kodlanacağını belirtir.</td>
+        </tr>
+		<tr>
+            <td>method</td>
+            <td>get<br>post</td>
+            <td>Form verileri gönderilirken hangi HTTP yönteminin kullanılacağanı belirtir.</td>
+        </tr>
+		<tr>
+            <td>name</td>
+            <td>metin</td>
+            <td>Formun ismini belirtir.</td>
+        </tr>
+		<tr>
+            <td>novalidate</td>
+            <td>novalidate</td>
+            <td>Form verilerinin doğrulanmamasını belirtir.</td>
+        </tr>
+		<tr>
+            <td>target</td>
+            <td>_blank<br>_self<br>_parent<br>_top</td>
+            <td>Form verileri gönderildikten sonra yanıtın nerede görüntüleneceğini belirtir.</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Form elemanları</h2>
+    <p>HTML formalar oluştururken input, select, textarea, button, fieldset ve legend, datalist etiketleri kullanılır. </p>
+    <h3 id="Binput">input</h3>
+    <p>
+        Form oluştururken metin kutuları, onay kutuları, butonlar gibi bir çok eleman &lt;input&gt;  etiketi ile oluşturulabilmektedir.  
+        <br>
+        HTML5'te input etiketi ile oluşturabileceğimiz form elemanları aşağıda listelernmiştir. 
+        <ul>
+            <li>&lt;input type="button"&gt;</li>
+            <li>&lt;input type="checkbox"&gt;</li>
+            <li>&lt;input type="color"&gt;</li>
+            <li>&lt;input type="date"&gt;</li>
+            <li>&lt;input type="datetime-local"&gt;</li>
+            <li>&lt;input type="email"&gt;</li>
+            <li>&lt;input type="file"&gt;</li>
+            <li>&lt;input type="hidden"&gt;</li>
+            <li>&lt;input type="image"&gt;</li>
+            <li>&lt;input type="month"&gt;</li>
+            <li>&lt;input type="number"&gt;</li>
+            <li>&lt;input type="password"&gt;</li>
+            <li>&lt;input type="radio"&gt;</li>
+            <li>&lt;input type="range"&gt;</li>
+            <li>&lt;input type="reset"&gt;</li>
+            <li>&lt;input type="search"&gt;</li>
+            <li>&lt;input type="submit"&gt;</li>
+            <li>&lt;input type="tel"&gt;</li>
+            <li>&lt;input type="text"&gt;</li>
+            <li>&lt;input type="time"&gt;</li>
+            <li>&lt;input type="url"&gt;</li>
+            <li>&lt;input type="week"&gt;</li>
+          </ul>
+    </p>
+    <h3 id="Bselect">select</h3>
+    <p>&lt;sleect&gt; etiketi ile aşağı açılır listeler oluşturulmaktadır. </p>
+    <select name="ogrTur" id="ogrTur">
+        <option value="ilkokul">İlkokul</option>
+        <option value="lise">Lise</option>
+        <option value="üniversite">Lisans</option>
+        <option value="master">Yüksek Lisans</option>
+        <option value="phd">Doktora</option>
+    </select> <br>
+    <p>selected özniteliğini eklediğimiz option etiketi seçili olarak gelir. Aşağıdaki açılır listede Lisans seçilidir.</p>
+    <select name="ogrTur" id="ogrTur">
+        <option value="ilkokul">İlkokul</option>
+        <option value="lise">Lise</option>
+        <option value="üniversite" selected>Lisans</option>
+        <option value="master">Yüksek Lisans</option>
+        <option value="phd">Doktora</option>
+    </select><br>
+    <p>Açılır listenin görünen eleman sayısını select etiketine eklediğimiz size özniteliği ile belirleyebiliriz.</p> 
+    <select name="ogrTur" id="ogrTur" size="3">
+        <option value="ilkokul">İlkokul</option>
+        <option value="lise">Lise</option>
+        <option value="üniversite" selected>Lisans</option>
+        <option value="master">Yüksek Lisans</option>
+        <option value="phd">Doktora</option>
+    </select><br>
+    <p>Açılır listelerde birden fazla seçim yapmaya izin vermek için select etiketine multiple özniteliğini eklemeliyiz.Aşağıdaki açılır kutu ctrl tuşuna basılı tutarak bir den fazla seçime izin vermektedir.</p> 
+    <select name="ogrTur" id="ogrTur" multiple>
+        <option value="ilkokul">İlkokul</option>
+        <option value="lise">Lise</option>
+        <option value="üniversite" selected>Lisans</option>
+        <option value="master">Yüksek Lisans</option>
+        <option value="phd">Doktora</option>
+    </select><br>
+    <h3 id="Btextarea">textarea</h3>
+    <p>Form içerisinde çok satırlı metin kutuları oluşturmak için &lt;textarea&gt; etikeli kullanılır. <br>
+    textarea elemanının boyuru rows ve cols öznitelikleri ile yada css ile düzenlenebilir. </p> 
+    <textarea name="message" rows="4" cols="30">The cat was playing in the garden.
+    </textarea>
+    <h3 id="Bbutton">button</h3>
+    <p>&lt;button&gt; etikeli ile form içerisine butonlar ekleyebilirsiniz. Butonlara tıklandığı zaman yapılacak işlemler javascript ile kontrol edilebilir.</p> 
+    <button type="button" onclick="alert('Merhaba Dünya!')">Tıkla</button>
+
+    <h3 id="Bfieldset">fieldset ve legend</h3>
+    <p>&lt;fieldset&gt; etiketi ile oluşturduğumuz formları bölümlere ayırabiliriz. &lt;legend&gt; etiketi ile de oluşturulan bu bölümlere başlık eklenmesini sağlar.</p>
+    
+    <form action="">
+        <fieldset>
+          <legend>Kişisel Bilgiler:</legend>
+          <label for="fname">Adınız:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Soyadınız:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Gönder">
+        </fieldset>
+    </form>
+    
+    <h3 id="Bdatalist">datailst</h3>
+    <p>&lt;datalist&gt; etiketi, bir &lt;input&gt; elemanı için önceden tanımlanmış seçeneklerin bir listesini belirtir.
+        Kullanıcılar, veri girerken önceden tanımlanmış seçeneklerin bir açılır listesini göreceklerdir.        
+        List özniteliği &lt;input&gt; öğesi, &lt;datalist&gt; öğesinin ıd özniteliği ile aynı olmalıdır.</p>
+    <form action="#" method="post">
+        <input type="text" name="city" id="city" list="iller">
+        <datalist id="iller">
+            <option >Adana</option>
+            <option >Adıyaman</option>
+            <option >Afyonkarahisar</option>
+            <option >Ağrı</option>
+            <option >Amasya</option>
+            <option >Ankara</option>
+            <option >Antalya</option>
+            <option >Artvin</option>
+            <option >Aydın</option>
+            <option >Balıkesir</option>
+            <option >Bilecik</option>
+            <option >Bingöl</option>
+            <option >Bitlis</option>
+            <option >Bolu</option>
+            <option >Burdur</option>
+            <option >Bursa</option>
+            <option >Çanakkale</option>
+            <option >Çankırı</option>
+            <option >Çorum</option>
+            <option >Denizli</option>
+            <option >Diyarbakır</option>
+            <option >Edirne</option>
+            <option >Elazığ</option>
+            <option >Erzincan</option>
+            <option >Erzurum</option>
+            <option >Eskişehir</option>
+            <option >Gaziantep</option>
+            <option >Giresun</option>
+            <option >Gümüşhane</option>""
+            <option >Hakkâri</option>
+            <option >Hatay</option>
+            <option >Isparta</option>
+            <option >Mersin</option>
+            <option >İstanbul</option>
+            <option >İzmir</option>
+            <option >Kars</option>
+            <option >Kastamonu</option>
+            <option >Kayseri</option>
+            <option >Kırklareli</option>
+            <option >Kırşehir</option>
+            <option >Kocaeli</option>
+            <option >Konya</option>
+            <option >Kütahya</option>
+            <option >Malatya</option>
+            <option >Manisa</option>
+            <option >Kahramanmaraş</option>
+            <option >Mardin</option>
+            <option >Muğla</option>
+            <option >Muş</option>
+            <option >Nevşehir</option>
+            <option >Niğde</option>
+            <option >Ordu</option>
+            <option >Rize</option>
+            <option >Sakarya</option>
+            <option >Samsun</option>
+            <option >Siirt</option>
+            <option >Sinop</option>
+            <option >Sivas</option>
+            <option >Tekirdağ</option>
+            <option >Tokat</option>
+            <option >Trabzon</option>
+            <option >Tunceli</option>
+            <option >Şanlıurfa</option>
+            <option >Uşak</option>
+            <option >Van</option>
+            <option >Yozgat</option>
+            <option >Zonguldak</option>
+            <option >Aksaray</option>
+            <option >Bayburt</option>
+            <option >Karaman</option>
+            <option >Kırıkkale</option>
+            <option >Batman</option>
+            <option >Şırnak</option>
+            <option >Bartın</option>
+            <option >Ardahan</option>
+            <option >Iğdır</option>
+            <option >Yalova</option>
+            <option >Karabük</option>
+            <option >Kilis</option>
+            <option >Osmaniye</option>
+            <option >Düzce</option>
+        </datalist>
+    </form>
+
+    <p>Anasayafa dönmek için <a href="../index.html"> tıklayın</a></p>
+</body>
+</html>
